@@ -1,4 +1,5 @@
 import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +12,7 @@ import {
 function App() {
   return (
     <Router>
+      <GlobalStyle />
       <div>
         <nav>
           <ul>
@@ -92,3 +94,13 @@ const Topic = () => {
 };
 
 export default App;
+
+const GlobalStyle = createGlobalStyle`
+  ul {
+    list-style: none;
+  }
+
+   a{
+    text-decoration: none;
+   }
+`;
