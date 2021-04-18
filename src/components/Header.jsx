@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Home from 'pages/Home';
-import Posts from 'pages/Posts';
 
 const Header = () => {
   return (
