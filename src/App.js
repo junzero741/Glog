@@ -1,4 +1,3 @@
-import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import {
   BrowserRouter as Router,
@@ -9,59 +8,17 @@ import {
   useParams,
 } from 'react-router-dom';
 import Header from 'components/Header';
+import Nav from 'components/Nav';
 
 function App() {
   return (
-    <Router>
+    <>
       <GlobalStyle />
-      <div>
-        <Header />
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-            <li>
-              <Link to="/topics">Topics</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/topics">
-            <Topics />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+      <Header />
+      <Nav />
+    </>
   );
 }
-
-const Home = () => {
-  return <h2>Home</h2>;
-};
-
-const About = () => {
-  return <h2>About</h2>;
-};
-const Users = () => {
-  return <h2>Users</h2>;
-};
 
 const Topics = () => {
   let match = useRouteMatch();
