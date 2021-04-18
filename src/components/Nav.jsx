@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import About from 'pages/About';
 import Posts from 'pages/Posts';
 import Home from 'pages/Home';
-import Etc from 'pages/Etc';
+import Topics from 'pages/Topics';
 
 const Nav = () => {
   return (
@@ -17,10 +17,10 @@ const Nav = () => {
             <Link to="/posts">Posts</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/topics">Topics</Link>
           </li>
           <li>
-            <Link to="/etc">Etc</Link>
+            <Link to="/about">About</Link>
           </li>
         </ul>
 
@@ -31,8 +31,8 @@ const Nav = () => {
           <Route path="/posts">
             <Posts />
           </Route>
-          <Route path="/etc">
-            <Etc />
+          <Route path="/topics">
+            <Topics />
           </Route>
           <Route path="/">
             <Home />
