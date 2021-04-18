@@ -8,12 +8,14 @@ import {
   useRouteMatch,
   useParams,
 } from 'react-router-dom';
+import Header from 'components/Header';
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
       <div>
+        <Header />
         <nav>
           <ul>
             <li>
