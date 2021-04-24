@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import Header from 'components/Header';
 import Nav from 'components/Nav';
+import Slider from 'components/Slider/Slider';
+import Body from 'components/body/Body';
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <GlobalStyle />
       <Header />
       <Nav />
+      <Body />
+      {/* <Slider /> */}
     </>
   );
 }
@@ -15,6 +19,9 @@ function App() {
 export default App;
 
 const GlobalStyle = createGlobalStyle`
+
+
+
   ul {
     list-style: none;
   }
