@@ -19,4 +19,5 @@ export default Header;
 const HeaderLayout = styled.div`
     display: flex;
     justify-content: space-between;
+    font-weight: ${({theme}) => theme.font_weight.bold};
 `
