@@ -6,10 +6,5 @@ import NotoSansKR_Regular from "./notoSansKR/NotoSansKR_Regular.woff";
 import NotoSansKR_Thin from "./notoSansKR/NotoSansKR_Thin.woff";
 
 export {
-	NotoSansKR_Black,
-	NotoSansKR_Bold,
-	NotoSansKR_Regular,
-	NotoSansKR_Light,
-	NotoSansKR_Medium,
-	NotoSansKR_Thin,
+	NotoSansKR_Black
 };
