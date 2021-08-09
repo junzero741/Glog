@@ -37,4 +37,9 @@ module.exports = {
 		publicPath: "/",
 		path: path.join(__dirname, "dist"), // npm webpack을 실행하면 index.tsx를 통해서 webpack처리 후 dist폴더가 생기고 그 안에 app.js가 들어있다.
 	},
+	devServer: {
+		inline: true,
+		port: 8080,
+		historyApiFallback: true,
+	},
 };

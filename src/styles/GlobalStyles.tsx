@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   html,
   body {
 	font-family:'NotoSansKR';
-  font-weight: 100;
+  font-weight: 500;
 	font-size: 16px;
   }
 
@@ -18,8 +18,6 @@ const GlobalStyles = createGlobalStyle`
   font-style: normal;
   src: url(${NotoSansKR_Black}) format("woff");
 	}
-
-  
   
 `;
 
