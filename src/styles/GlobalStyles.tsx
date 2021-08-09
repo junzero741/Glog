@@ -1,9 +1,23 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import {NotoSansKR_Black} from '../fonts/font';
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
   
+  html,
+  body {
+	font-family:'NotoSansKR';
+  font-weight: 500;
+	font-size: 16px;
+  }
+
+  
+  @font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  src: url(${NotoSansKR_Black}) format("woff");
+	}
   
 `;
 
